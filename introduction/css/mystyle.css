@@ -117,13 +117,12 @@ main {
 
 .grid {
   display: flex;
-  flex-wrap: wrap;
-  gap: 22px;
-  margin-bottom: 22px;
+  gap: 20px;
 }
 
-.grid .card {
-  flex: 1 1 260px;
+.hobby-row {
+  display: flex;
+  gap: 16px;
 }
 
 /* ---------- Cards ---------- */
