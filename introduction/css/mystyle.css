@@ -116,10 +116,14 @@ main {
 }
 
 .grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  display: flex;
+  flex-wrap: wrap;
   gap: 22px;
   margin-bottom: 22px;
+}
+
+.grid .card {
+  flex: 1 1 260px;
 }
 
 /* ---------- Cards ---------- */
@@ -162,13 +166,14 @@ small {
 
 /* ---------- Hobbies ---------- */
 .hobby-row {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  display: flex;
+  flex-wrap: wrap;
   gap: 16px;
   margin-bottom: 22px;
 }
 
 .hobby {
+  flex: 1 1 220px;
   padding: 16px 18px;
   background-color: #262930;
   border-radius: 10px;
