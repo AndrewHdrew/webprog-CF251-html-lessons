@@ -1,52 +1,117 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Andrew James T Hernandez</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Andrew Hernandez | Personal Profile</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600;800&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/mystyle.css">
 </head>
 <body>
-  <h1>Personal Profile Web Page</h1>
-  <h2>About Me: Andrew James T Hernandez</h2>
 
-  <h3>Education / Achievements</h3>
-  <ul>
-    <li>Senior High School graduate</li>
-    <li>Challenger rank in League of Legends</li>
-  </ul>
+  <nav class="navbar">
+    <span class="logo">&lt;AJH/&gt;</span>
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#journey">Journey</a></li>
+      <li><a href="#hobbies">Hobbies</a></li>
+      <li><a href="#goals">Goals</a></li>
+      <li><a href="#gallery">Gallery</a></li>
+    </ul>
+  </nav>
 
-  <h3>Course</h3>
-  <p>BSCS-SF</p>
+  <header class="hero">
+    <img class="avatar" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR7GROQSUIou19IfrCSM4GNxmrhA2GiTZS_aSRJtkzVqg&s=10" alt="Andrew James T. Hernandez">
+    <div class="hero-text">
+      <p class="eyebrow">PERSONAL PROFILE WEB PAGE</p>
+      <h1>Andrew James T. Hernandez</h1>
+      <p class="tagline">Computer Science student. Challenger-rank gamer. Always leveling up.</p>
+      <div class="badges">
+        <span class="badge">BSCS-SF</span>
+        <span class="badge">Challenger</span>
+        <span class="badge">Cyclist</span>
+      </div>
+    </div>
+  </header>
 
-  <h3>IT Experience</h3>
-  <p>work immersion in dost it department</p>
+  <main>
 
-  <h3>Hobbies &amp; Interests</h3>
-  <ul>
-    <li>Gaming</li>
-    <li>Cycling</li>
-  </ul>
+    <section id="about" class="card">
+      <h2>// About Me</h2>
+      <p>
+        I'm a BSCS student who loves solving problems, whether it's a tough
+        bug in my code or a close match on the Rift. I like turning ideas into
+        things that actually work, and I'm learning web development one
+        page at a time.
+      </p>
+    </section>
 
-  <h3>Goals in Life / Dream</h3>
-  <p>To have my own jet ski.</p>
+    <section id="journey" class="grid">
+      <div class="card">
+        <h2>🎓 Education / Achievements</h2>
+        <ul>
+          <li>Senior High School graduate</li>
+          <li>Challenger rank in League of Legends, the top tier of the game</li>
+        </ul>
+      </div>
 
-  <h3>Picture Gallery</h3>
-  <p>
-    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR7GROQSUIou19IfrCSM4GNxmrhA2GiTZS_aSRJtkzVqg&s=10" alt="img">
-  </p>
+      <div class="card">
+        <h2>💻 Course</h2>
+        <p>BSCS-SF<br><small>Bachelor of Science in Computer Science</small></p>
+      </div>
 
-  <table border="1">
-    <tr>
-      <th>Hobby</th>
-      <th>Level</th>
-    </tr>
-    <tr>
-      <td>Gaming</td>
-      <td>Challenger</td>
-    </tr>
-    <tr>
-      <td>Cycling</td>
-      <td>(add)</td>
-    </tr>
-  </table>
+      <div class="card">
+        <h2>🛠️ IT Experience</h2>
+        <p>Work immersion in the IT Department of DOST, my first look at IT work in a real workplace.</p>
+      </div>
+    </section>
+
+    <section id="hobbies" class="card">
+      <h2>🎮 Hobbies &amp; Interests</h2>
+      <div class="hobby-row">
+        <div class="hobby">
+          <h3>Gaming</h3>
+          <p>Competitive play that trains teamwork, strategy and quick thinking.</p>
+        </div>
+        <div class="hobby">
+          <h3>Cycling</h3>
+          <p>Fresh air, clear thoughts and a break from the screen.</p>
+        </div>
+      </div>
+
+      <table>
+        <tr>
+          <th>Hobby</th>
+          <th>Level</th>
+        </tr>
+        <tr>
+          <td>Gaming</td>
+          <td>Challenger</td>
+        </tr>
+        <tr>
+          <td>Cycling</td>
+          <td>Intermediate</td>
+        </tr>
+      </table>
+    </section>
+
+    <section id="goals" class="card goal">
+      <h2>🎯 Goals in Life / Dream</h2>
+      <p class="big-quote">"To have my own jet ski."</p>
+      <p>And a career in tech that makes it possible. 🌊</p>
+    </section>
+
+    <section id="gallery" class="card">
+      <h2>📸 Picture Gallery</h2>
+      <img class="gallery-img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR7GROQSUIou19IfrCSM4GNxmrhA2GiTZS_aSRJtkzVqg&s=10" alt="Andrew James T. Hernandez">
+    </section>
+
+  </main>
+
+  <footer>
+    <p>Made by Andrew James T. Hernandez | BSCS-SF | 2026</p>
+  </footer>
+
 </body>
 </html>
