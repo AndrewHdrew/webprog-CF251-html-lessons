@@ -282,3 +282,32 @@ footer {
   font-size: 30px;
   color: #111;
 }
+/* ---------- Skills (flexbox) ---------- */
+.skills-intro {
+  color: #b8b8c2;
+  margin-bottom: 14px;
+}
+
+.skills-flex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  gap: 12px;
+}
+
+.skill {
+  flex: 1 1 140px;
+  text-align: center;
+  padding: 14px 18px;
+  background-color: #262930;
+  border: 2px solid #ffb703;
+  border-radius: 10px;
+  font-weight: 600;
+  color: #ffffff;
+  transition: background-color 0.2s, color 0.2s;
+}
+
+.skill:hover {
+  background-color: #ffb703;
+  color: #121316;
+}
