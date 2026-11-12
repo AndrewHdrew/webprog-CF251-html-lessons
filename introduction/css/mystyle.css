@@ -265,7 +265,9 @@ footer {
   .badges {
     justify-content: center;
   }
-  .flex-container {
+}
+
+.flex-container {
   display: flex;
   flex-wrap: wrap;
   background-color: dodgerblue;
@@ -279,5 +281,4 @@ footer {
   line-height: 75px;
   font-size: 30px;
   color: #111;
-}
 }
