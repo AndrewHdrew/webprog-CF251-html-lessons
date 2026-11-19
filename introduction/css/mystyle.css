@@ -115,14 +115,11 @@ main {
   padding: 0 24px 40px;
 }
 
+/* CSS GRID: Education / Course / IT Experience cards */
 .grid {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
   gap: 20px;
-}
-
-.hobby-row {
-  display: flex;
-  gap: 16px;
 }
 
 /* ---------- Cards ---------- */
@@ -163,16 +160,15 @@ small {
   color: #8f8f9b;
 }
 
-/* ---------- Hobbies ---------- */
+/* ---------- Hobbies (CSS GRID) ---------- */
 .hobby-row {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
   gap: 16px;
   margin-bottom: 22px;
 }
 
 .hobby {
-  flex: 1 1 220px;
   padding: 16px 18px;
   background-color: #262930;
   border-radius: 10px;
@@ -310,4 +306,12 @@ footer {
 .skill:hover {
   background-color: #ffb703;
   color: #121316;
+}
+
+/* ---------- Grid responsive ---------- */
+@media (max-width: 768px) {
+  .grid,
+  .hobby-row {
+    grid-template-columns: 1fr;
+  }
 }
