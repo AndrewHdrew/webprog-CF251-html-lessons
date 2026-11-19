@@ -266,4 +266,26 @@ footer {
   .badges {
     justify-content: center;
   }
+  /* ---------- Flexbox + Grid combined ---------- */
+
+/* Grid cards: use flexbox inside each grid cell */
+.grid .card {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
 }
+
+/* Hobby cards in the grid: flexbox to stack their content */
+.hobby {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* Footer: flexbox centering */
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
