@@ -2,61 +2,128 @@
 <html lang="en" data-bs-theme="dark">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Personal Profile Web Page - Andrew James T. Hernandez</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Andrew Hernandez | Personal Profile</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
   <style>
-    body { background-color: #0f172a; color: #fff; }
-    .profile-card { background-color: #131d33; border-radius: 16px; }
-    .profile-card h2 { font-size: 1.1rem; font-weight: 700; }
-    .gallery-img { border: 3px solid #fff; border-radius: 12px; max-width: 275px; width: 100%; }
+    body { background-color: #10172a; color: #e5e7eb; }
+    .card-box { background-color: #141c30; border-radius: 10px; box-shadow: 0 6px 16px rgba(0,0,0,.35); }
+    .card-box h2 { font-size: 1rem; font-weight: 700; }
+    .muted { color: #aab2c5; }
+    .skill, .hobby { background-color: #1e2942; border-radius: 8px; padding: 8px 14px; }
+    .gallery-img { width: 220px; max-width: 100%; border: 3px solid #fff; border-radius: 8px; }
   </style>
 </head>
 <body>
-  <div class="container-fluid px-3 px-md-4 py-4">
+<div class="container-fluid p-2">
 
-    <header class="text-center mb-4">
-      <h1 class="fw-bold display-5">Personal Profile Web Page</h1>
-      <p class="mb-0">Andrew James T. Hernandez | BSCS-SF</p>
-    </header>
+  <header class="text-center pt-4 pb-3">
+    <h1 class="fw-bold">Personal Profile Web Page</h1>
+    <p class="mb-0">Andrew James T. Hernandez | BSCS-SF</p>
+  </header>
 
-    <div class="row g-3">
+  <main class="row g-3">
 
-      <!-- Left column -->
-      <div class="col-lg-8">
+    <div class="col-lg-8">
 
-        <section class="profile-card p-4 mb-3 text-center">
-          <h2>// About Me</h2>
-          <p class="mb-0">I'm a BSCS student who loves solving problems, whether it's a tough bug in my code or a close match on the Rift. I like turning ideas into things that actually work, and I'm learning web development one page at a time.</p>
-        </section>
+      <section id="about" class="card-box p-3 mb-3 text-center">
+        <h2>// About Me</h2>
+        <p class="mb-0">
+          I'm a BSCS student who loves solving problems, whether it's a tough
+          bug in my code or a close match on the Rift. I like turning ideas into
+          things that actually work, and I'm learning web development one
+          page at a time.
+        </p>
+      </section>
 
-        <section class="profile-card p-4 mb-3 text-center">
+      <section id="journey">
+        <div class="card-box p-3 mb-3 text-center">
           <h2>🎓 Education / Achievements</h2>
           <ul class="list-unstyled mb-0">
             <li>Senior High School graduate</li>
             <li>Challenger rank in League of Legends, the top tier of the game</li>
           </ul>
-        </section>
+        </div>
 
-        <section class="profile-card p-4 mb-3 text-center">
+        <div class="card-box p-3 mb-3 text-center">
           <h2>💻 Course</h2>
-          <p class="mb-0">BSCS &ndash; CF251 (Web Programming)</p>
-        </section>
+          <p class="mb-0">BSCS-SF<br><small class="muted">Bachelor of Science in Computer Science</small></p>
+        </div>
 
-      </div>
+        <div class="card-box p-3 mb-3 text-center">
+          <h2>🛠️ IT Experience</h2>
+          <p class="mb-0">Work immersion in the IT Department of DOST, my first look at IT work in a real workplace.</p>
+        </div>
+      </section>
 
-      <!-- Right column -->
-      <div class="col-lg-4">
-        <section class="profile-card p-4 text-center">
-          <h2>📷 Picture Gallery</h2>
-          <!-- Change photo.jpg to the filename of your picture in the same folder -->
-          <img src="photo.jpg" class="gallery-img" alt="Andrew James T. Hernandez">
-        </section>
-      </div>
+      <section id="skills" class="card-box p-3 mb-3 text-center">
+        <h2>🧩 Skills &amp; Tools</h2>
+        <p class="muted">What I'm working with right now. Resize the window to watch these wrap.</p>
+        <div class="d-flex flex-wrap justify-content-center gap-2 mt-2">
+          <span class="skill">HTML</span>
+          <span class="skill">CSS</span>
+          <span class="skill">Flexbox</span>
+          <span class="skill">Bootstrap 5</span>
+          <span class="skill">Git &amp; GitHub</span>
+          <span class="skill">Problem Solving</span>
+          <span class="skill">Teamwork</span>
+          <span class="skill">Strategy</span>
+          <span class="skill">Quick Thinking</span>
+          <span class="skill">IT Support Basics</span>
+        </div>
+      </section>
+
+      <section id="hobbies" class="card-box p-3 mb-3 text-center">
+        <h2>🎮 Hobbies &amp; Interests</h2>
+        <div class="row g-2 mb-3">
+          <div class="col-md-6">
+            <div class="hobby h-100">
+              <h3 class="h6">Gaming</h3>
+              <p class="mb-0">Competitive play that trains teamwork, strategy and quick thinking.</p>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="hobby h-100">
+              <h3 class="h6">Cycling</h3>
+              <p class="mb-0">Fresh air, clear thoughts and a break from the screen.</p>
+            </div>
+          </div>
+        </div>
+
+        <table class="table table-dark table-bordered mb-0">
+          <thead>
+            <tr><th>Hobby</th><th>Level</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>Gaming</td><td>Challenger</td></tr>
+            <tr><td>Cycling</td><td>Intermediate</td></tr>
+          </tbody>
+        </table>
+      </section>
+
+      <section id="goals" class="card-box p-3 mb-3 text-center">
+        <h2>🎯 Goals in Life / Dream</h2>
+        <p class="fs-4 fst-italic">"To have my own jet ski."</p>
+        <p class="mb-0">And a career in tech that makes it possible. 🌊</p>
+      </section>
 
     </div>
-  </div>
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <div class="col-lg-4">
+      <section id="gallery" class="card-box p-3 text-center">
+        <h2>📸 Picture Gallery</h2>
+        <img class="gallery-img mt-2" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR7GROQSUIou19IfrCSM4GNxmrhA2GiTZS_aSRJtkzVqg&s=10" alt="Andrew James T. Hernandez">
+      </section>
+    </div>
+
+  </main>
+
+  <footer class="text-center py-4 muted small">
+    <p class="mb-0">Made by Andrew James T. Hernandez | BSCS-SF | 2026</p>
+  </footer>
+
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
