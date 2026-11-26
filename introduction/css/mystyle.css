@@ -4,402 +4,207 @@
   padding: 0;
 }
 
-html {
-  scroll-behavior: smooth;
-}
-
 body {
-  font-family: 'Poppins', Arial, sans-serif;
-  background-color: #121316;
-  color: #e8e8ec;
-  line-height: 1.7;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #10172a;
+  color: #e5e7eb;
+  line-height: 1.6;
+  padding: 8px;
 }
 
-/* ---------- Navbar ---------- */
-.navbar {
-  position: sticky;
-  top: 0;
-  z-index: 10;
+img {
+  max-width: 100%;
+}
+
+/* ========== Chania demo (mobile first) ========== */
+.chania {
+  background-color: #ffffff;
+  color: #1f2937;
+  padding-bottom: 10px;
+}
+
+.chania-header {
+  background-color: #800080;
+  color: #ffffff;
+  text-align: center;
+  padding: 16px;
+}
+
+.chania-row {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 14px 40px;
-  background-color: #16181d;
-  border-bottom: 2px solid #ffb703;
+  flex-wrap: wrap;
 }
 
-.logo {
-  font-family: 'Orbitron', sans-serif;
-  font-weight: 800;
-  color: #ffb703;
-  letter-spacing: 2px;
+.chania-menu,
+.chania-main,
+.chania-facts {
+  width: 100%;
+  padding: 8px 0;
 }
 
-.navbar ul {
-  display: flex;
-  gap: 24px;
+.chania-menu ul {
   list-style: none;
 }
 
-.navbar a {
-  color: #c9c9d1;
-  text-decoration: none;
-  font-size: 0.9rem;
-  transition: color 0.2s;
-}
-
-.navbar a:hover {
-  color: #ffb703;
-}
-
-/* ---------- Hero ---------- */
-.hero {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 45px;
-  padding: 70px 30px 50px;
-  flex-wrap: wrap;
-}
-
-.avatar {
-  width: 210px;
-  height: 210px;
-  object-fit: cover;
-  border-radius: 24px;
-  border: 4px solid #ffb703;
-  box-shadow: 10px 10px 0 rgba(255, 183, 3, 0.25);
-}
-
-.eyebrow {
-  font-size: 0.75rem;
-  letter-spacing: 4px;
-  color: #ffb703;
-}
-
-.hero h1 {
-  font-family: 'Orbitron', sans-serif;
-  font-size: 2.4rem;
-  line-height: 1.2;
-  margin: 8px 0;
+.chania-menu li {
+  background-color: #33b5e5;
   color: #ffffff;
-}
-
-.tagline {
-  font-weight: 300;
-  font-size: 1.05rem;
-  max-width: 420px;
-  color: #b8b8c2;
-}
-
-.badges {
-  margin-top: 18px;
-  display: flex;
-  gap: 10px;
-  flex-wrap: wrap;
-}
-
-.badge {
-  padding: 5px 16px;
-  border-radius: 6px;
-  background-color: #ffb703;
-  color: #121316;
-  font-size: 0.8rem;
-  font-weight: 600;
-}
-
-/* ---------- Layout ---------- */
-main {
-  max-width: 950px;
-  margin: 0 auto;
-  padding: 0 24px 40px;
-}
-
-.grid {
-  display: flex;
-  gap: 20px;
-}
-
-.hobby-row {
-  display: flex;
-  gap: 16px;
-}
-
-/* ---------- Cards ---------- */
-.card {
-  background-color: #1c1e24;
-  border-left: 5px solid #ffb703;
-  border-radius: 10px;
-  padding: 24px 28px;
-  margin-bottom: 22px;
-  transition: transform 0.25s, box-shadow 0.25s;
-}
-
-.grid .card {
-  margin-bottom: 0;
-}
-
-.card:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.5);
-}
-
-.card h2 {
-  font-family: 'Orbitron', sans-serif;
-  font-size: 1rem;
-  color: #ffb703;
-  margin-bottom: 12px;
-}
-
-.card ul {
-  padding-left: 20px;
-}
-
-.card li {
+  padding: 8px;
   margin-bottom: 6px;
 }
 
-small {
-  color: #8f8f9b;
+.chania-main {
+  padding: 12px 16px;
 }
 
-/* ---------- Hobbies ---------- */
-.hobby-row {
+.chania-main h2 {
+  text-align: center;
+}
+
+.chania-facts {
+  background-color: #f5f5dc;
+  border: 1px solid #33b5e5;
+  padding: 12px 16px;
+}
+
+.chania-facts ul {
+  padding-left: 20px;
+}
+
+.chania-footer {
+  background-color: #0099cc;
+  color: #ffffff;
+  text-align: center;
+  padding: 10px;
+}
+
+/* ========== Profile ========== */
+.title {
+  text-align: center;
+  padding: 24px 8px 16px;
+}
+
+.profile {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
   gap: 16px;
-  margin-bottom: 22px;
 }
 
-.hobby {
-  flex: 1 1 220px;
-  padding: 16px 18px;
-  background-color: #262930;
+.card,
+.grid .card {
+  background-color: #141c30;
   border-radius: 10px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.35);
+  padding: 18px;
+  margin-bottom: 16px;
+  text-align: center;
 }
 
-.hobby h3 {
-  color: #ffffff;
+.card h2 {
   font-size: 1rem;
-  margin-bottom: 4px;
+  margin-bottom: 6px;
 }
 
-/* ---------- Table ---------- */
-table {
-  width: 100%;
-  border-collapse: collapse;
-  overflow: hidden;
-  border-radius: 8px;
+.card ul {
+  list-style-position: inside;
 }
 
-th {
-  background-color: #ffb703;
-  color: #121316;
-  padding: 12px;
-  text-align: left;
-}
-
-td {
-  padding: 12px;
-  border-bottom: 1px solid #2e313a;
-}
-
-tr:hover td {
-  background-color: #262930;
-}
-
-/* ---------- Goals ---------- */
-.goal {
-  text-align: center;
-}
-
-.big-quote {
-  font-family: 'Orbitron', sans-serif;
-  font-size: 1.4rem;
-  margin: 10px 0;
-  color: #ffffff;
-}
-
-/* ---------- Gallery ---------- */
-.gallery-img {
-  display: block;
-  margin: 0 auto;
-  max-width: 320px;
-  width: 100%;
-  border-radius: 16px;
-  border: 3px solid #ffb703;
-}
-
-/* ---------- Footer ---------- */
-footer {
-  text-align: center;
-  padding: 26px;
-  font-size: 0.85rem;
-  color: #8f8f9b;
-  border-top: 1px solid #2e313a;
-}
-
-/* ---------- Mobile ---------- */
-@media (max-width: 600px) {
-  .navbar {
-    flex-direction: column;
-    gap: 8px;
-    padding: 12px;
-  }
-
-  .navbar ul {
-    gap: 14px;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-
-  .hero {
-    text-align: center;
-    gap: 24px;
-  }
-
-  .hero h1 {
-    font-size: 1.7rem;
-  }
-
-  .badges {
-    justify-content: center;
-  }
-}
-
-.flex-container {
-  display: flex;
-  flex-wrap: wrap;
-  background-color: dodgerblue;
-}
-
-.flex-container > div {
-  background-color: #f1f1f1;
-  width: 100px;
-  margin: 10px;
-  text-align: center;
-  line-height: 75px;
-  font-size: 30px;
-  color: #111;
-}
-/* ---------- Skills (flexbox) ---------- */
+small,
 .skills-intro {
-  color: #b8b8c2;
-  margin-bottom: 14px;
+  color: #aab2c5;
 }
 
 .skills-flex {
   display: flex;
   flex-wrap: wrap;
-  justify-content: flex-start;
-  gap: 12px;
+  justify-content: center;
+  gap: 8px;
+  margin-top: 10px;
 }
 
-.skill {
-  flex: 1 1 140px;
+.skill,
+.hobby {
+  background-color: #1e2942;
+  border-radius: 8px;
+  padding: 8px 14px;
+}
+
+.hobby-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 14px;
+}
+
+.hobby {
+  flex: 1 1 200px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  padding: 8px;
+  border-bottom: 1px solid #2c3854;
+}
+
+.gallery-img {
+  display: block;
+  width: 220px;
+  margin: 8px auto 0;
+  border: 3px solid #ffffff;
+  border-radius: 8px;
+}
+
+footer {
   text-align: center;
-  padding: 14px 18px;
-  background-color: #262930;
-  border: 2px solid #ffb703;
-  border-radius: 10px;
-  font-weight: 600;
-  color: #ffffff;
-  transition: background-color 0.2s, color 0.2s;
+  padding: 20px;
+  font-size: 0.85rem;
+  color: #aab2c5;
 }
 
-.skill:hover {
-  background-color: #ffb703;
-  color: #121316;
-}
-
-/* ========== Responsive Web Design ========== */
-
-/* Images never overflow their container */
-img {
-  max-width: 100%;
-}
-
-/* Space between the card row and the next section */
-.grid {
-  margin-bottom: 22px;
-}
-
-/* Keeps section titles visible below the sticky navbar */
-section {
-  scroll-margin-top: 80px;
-}
-
-/* Heading scales with the screen width */
-.hero h1 {
-  font-size: clamp(1.6rem, 5vw, 2.4rem);
-}
-
-/* Tablet and smaller */
-@media (max-width: 900px) {
-  .navbar {
-    padding: 12px 24px;
+/* ========== Tablet ========== */
+@media (min-width: 600px) {
+  .chania-menu {
+    width: 25%;
   }
 
-  .hero {
-    padding: 48px 24px 36px;
-  }
-
-  .grid {
-    flex-wrap: wrap;
-  }
-
-  .grid .card {
-    flex: 1 1 260px;
+  .chania-main {
+    width: 75%;
   }
 }
 
-/* Phone */
-@media (max-width: 600px) {
-  section {
-    scroll-margin-top: 110px;
+/* ========== Desktop ========== */
+@media (min-width: 768px) {
+  .chania-menu {
+    width: 8%;
+    min-width: 100px;
   }
 
-  .navbar {
-    padding: 10px 12px;
+  .chania-main {
+    flex: 1;
+    width: auto;
   }
 
-  .hero {
-    flex-direction: column;
-    padding: 32px 16px 28px;
+  .chania-facts {
+    width: 21%;
+    align-self: flex-start;
+    margin-top: 8px;
   }
 
-  .avatar {
-    width: 160px;
-    height: 160px;
+  .profile {
+    flex-direction: row;
+    align-items: flex-start;
   }
 
-  main {
-    padding: 0 14px 28px;
+  .profile-info {
+    flex: 2;
   }
 
-  .card {
-    padding: 18px 16px;
-  }
-
-  .grid {
-    flex-direction: column;
-  }
-
-  .grid .card {
-    flex: 0 0 auto;
-  }
-
-  .skill {
-    flex-basis: 120px;
-    padding: 10px 12px;
-  }
-
-  .big-quote {
-    font-size: 1.1rem;
-  }
-
-  th,
-  td {
-    padding: 9px;
+  .profile-side {
+    flex: 1;
   }
 }
