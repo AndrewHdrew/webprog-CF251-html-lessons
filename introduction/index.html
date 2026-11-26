@@ -1,72 +1,61 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-bs-theme="dark">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Personal Profile Web Page of Andrew Hernandez</title>
+  <title>Personal Profile Web Page - Andrew James T. Hernandez</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body { background-color: #0f172a; color: #fff; }
+    .profile-card { background-color: #131d33; border-radius: 16px; }
+    .profile-card h2 { font-size: 1.1rem; font-weight: 700; }
+    .gallery-img { border: 3px solid #fff; border-radius: 12px; max-width: 275px; width: 100%; }
+  </style>
 </head>
 <body>
-  <nav class="navbar navbar-expand bg-dark navbar-dark">
-    <div class="container">
-      <a class="navbar-brand" href="#">Andrew Hernandez</a>
-      <div class="navbar-nav">
-        <a class="nav-link" href="#about">About</a>
-        <a class="nav-link" href="#education">Education</a>
-        <a class="nav-link" href="#interests">Interests</a>
-        <a class="nav-link" href="#contact">Contact</a>
+  <div class="container-fluid px-3 px-md-4 py-4">
+
+    <header class="text-center mb-4">
+      <h1 class="fw-bold display-5">Personal Profile Web Page</h1>
+      <p class="mb-0">Andrew James T. Hernandez | BSCS-SF</p>
+    </header>
+
+    <div class="row g-3">
+
+      <!-- Left column -->
+      <div class="col-lg-8">
+
+        <section class="profile-card p-4 mb-3 text-center">
+          <h2>// About Me</h2>
+          <p class="mb-0">I'm a BSCS student who loves solving problems, whether it's a tough bug in my code or a close match on the Rift. I like turning ideas into things that actually work, and I'm learning web development one page at a time.</p>
+        </section>
+
+        <section class="profile-card p-4 mb-3 text-center">
+          <h2>🎓 Education / Achievements</h2>
+          <ul class="list-unstyled mb-0">
+            <li>Senior High School graduate</li>
+            <li>Challenger rank in League of Legends, the top tier of the game</li>
+          </ul>
+        </section>
+
+        <section class="profile-card p-4 mb-3 text-center">
+          <h2>💻 Course</h2>
+          <p class="mb-0">BSCS &ndash; CF251 (Web Programming)</p>
+        </section>
+
       </div>
+
+      <!-- Right column -->
+      <div class="col-lg-4">
+        <section class="profile-card p-4 text-center">
+          <h2>📷 Picture Gallery</h2>
+          <!-- Change photo.jpg to the filename of your picture in the same folder -->
+          <img src="photo.jpg" class="gallery-img" alt="Andrew James T. Hernandez">
+        </section>
+      </div>
+
     </div>
-  </nav>
-
-  <main class="container my-4">
-    <h1>Personal Profile Web Page of Andrew Hernandez</h1>
-
-    <section id="about" class="my-4">
-      <h2>About Me</h2>
-      <div class="row">
-        <div class="col-md-4 mb-3">
-          <!-- Replace with your own photo file, placed in the same folder -->
-          <img src="photo.jpg" class="img-fluid rounded" alt="Andrew Hernandez">
-        </div>
-        <div class="col-md-8">
-          <p>Write a short introduction about yourself here.</p>
-        </div>
-      </div>
-    </section>
-
-    <section id="education" class="my-4">
-      <h2>Education &amp; Experience</h2>
-      <div class="row g-3">
-        <div class="col-md-6">
-          <div class="p-3 bg-primary text-white rounded">
-            <h5>Education</h5>
-            <p class="mb-0">Your school / course (CF251)</p>
-          </div>
-        </div>
-        <div class="col-md-6">
-          <div class="p-3 bg-dark text-white rounded">
-            <h5>Experience</h5>
-            <p class="mb-0">Your experience, if any</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="interests" class="my-4">
-      <h2>Interests &amp; Hobbies</h2>
-      <ul class="list-group">
-        <li class="list-group-item">Interest 1</li>
-        <li class="list-group-item">Interest 2</li>
-        <li class="list-group-item">Interest 3</li>
-      </ul>
-    </section>
-
-    <section id="contact" class="my-4">
-      <h2>Contact</h2>
-      <p>Email: your-email@example.com</p>
-    </section>
-  </main>
+  </div>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
